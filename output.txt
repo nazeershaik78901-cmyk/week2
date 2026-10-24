@@ -1,0 +1,23 @@
+EXPERIMENT 2: BASIC PROMPT ENGINEERING
+
+USER PROMPT:
+Explain prompt engineering in simple English with one example.
+
+MODEL RESPONSE:
+**Prompt engineering** is simply the art of asking an AI the right questions, in the right way, to get the best possible answer. 
+
+Think of AI like a very smart assistant: if your instructions are vague, the result will be average. But if your instructions are clear and specific, the result will be great.
+
+---
+
+### Example: Asking for an email
+
+* **A basic prompt:**  
+  > *"Write an email asking for a day off."*  
+  *(The AI will give you a generic, robot-sounding template that might not fit your situation.)*
+
+* **An "engineered" prompt:**  
+  > *"Write a short, polite email to my manager asking for this Friday off for a doctor's appointment. Keep it under 50 words and friendly in tone."*  
+  *(The AI will give you an exact, ready-to-send email because you told it the **role**, the **reason**, the **length**, and the **tone**.)*
+
+**In short:** Prompt engineering is just knowing how to give clear directions so the AI does exactly what you want on the first try.

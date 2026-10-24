@@ -1,0 +1,39 @@
+# WEEK 2: BASELINE VS. ENHANCED PROMPTS
+ 
+from openai import OpenAI
+ 
+client = OpenAI(api_key="YOUR_API_KEY")
+ 
+print("===== WEEK 2: BASELINE VS. ENHANCED PROMPTS =====")
+ 
+baseline_prompt = "Explain Artificial Intelligence."
+ 
+enhanced_prompt = """
+You are an expert AI teacher.
+ 
+Explain Artificial Intelligence to a beginner engineering student.
+ 
+Requirements:
+1. Use simple English.
+2. Give a clear definition.
+3. Give 3 real-world examples.
+4. Explain in less than 150 words.
+5. End with a short summary.
+"""
+ 
+def get_response(prompt):
+    response = client.responses.create(
+        model="gpt-4o-mini",
+        input=prompt
+    )
+    return response.output_text
+ 
+print("\n--- BASELINE PROMPT ---")
+print(baseline_prompt)
+print("\n--- BASELINE RESPONSE ---")
+print(get_response(baseline_prompt))
+ 
+print("\n--- ENHANCED PROMPT ---")
+print(enhanced_prompt)
+print("\n--- ENHANCED RESPONSE ---")
+print(get_response(enhanced_prompt))
